@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn">Count is: 0</button>
+  <script>
+    let count = 0
+    // 拿到目标元素
+    const btn = document.getElementById('btn')
+    function increment(e) {
+      console.log(e)
+      e.target.innerText = `Count is: ${++count}`
+    }
+    // 添加点击事件
+    btn.addEventListener('click', increment)
+  </script>
+</body>
+</html>
